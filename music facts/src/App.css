@@ -1,0 +1,49 @@
+.hangman-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hangman-container > div {
+  margin-right: 10px;
+}
+
+.hangman-head {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.hangman-body {
+  width: 10px;
+  height: 80px;
+  background-color: #333;
+}
+
+.hangman-left-arm,
+.hangman-right-arm,
+.hangman-left-leg,
+.hangman-right-leg {
+  width: 50px;
+  height: 10px;
+  background-color: #333;
+}
+
+.hangman-noose {
+  width: 10px;
+  height: 60px;
+  background-color: #333;
+  position: relative;
+}
+
+.hangman-noose:before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  background-color: #333;
+  top: 0;
+  left: 5px;
+}
